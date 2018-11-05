@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Formulário , Primeira aula</h1>
+<form action="minhapaginaPHP.php" method="get">
+<fieldset>
+		<legend>informações básicas</legend>
+	<label for="cusuário">usuário:</label><input type="text" name="name" id="cusuário" placeholder="digite seu nome" value="bruna"/><br/>
+
+	<label>senha:<input type="password" name="senha" placeholder="digite sua senha"/></label><br/>
+		
+	
+	<label>comprovante Endereco:<input type="file" name="comprovanteEndereco"/></label><br>	
+
+	<label>número: <input type="number" max="100" min="0" step="10" /></label><br>
+
+	<label>intervalo: <input type="range" name="intervalo" max="100" min="0" step="10"/></label>
+
+	<label>telefome: <input type="tel" placeholder="(xx) xxxx - xxxx"/></label><br>
+
+	<label>email: <input type="email"/></label><br>
+
+	<label>mensagem: <textarea name="mensagem" cols="40" rows="10" maxlength="240" placeholder="fale sobre você!!"></textarea></label>
+
+	<input type="submit" value="cadastrar" />
+
+	<input type="reset" value="limpar"/><br>
+
+<h2>SEGUNDA AULA</h2>
+
+<select name="estados">
+	<option value="GO">Goiânia</option>
+</select><br>
+
+<label>cidades:<br>
+	<select name="cidades" multiple="multiple">
+	<option value="UDIA">uberlândia</option>
+	<option value="MHS">morrinhos</option>
+	<option value="GYN">goiânia</option>
+	<option value="CFS">confresa</option>
+	<option value="BG">barra do garças</option>
+</select></label><br>
+
+<label>
+	enviar foto:
+	<input type="image" alt="enviar" src="imagem"><br>
+</label><br>	
+
+</label>
+
+<label>
+	Data de nascimento:
+	<input type="date" dataNasctime/>
+</label><br>
+
+<input type="submit" value="enviar formulário"/>
+<input type="button" value="Botão génerioco" onclick="alert('clicou aqui')" />
+<button type="button" onclick="confirm('clicou no outro')">Outro botão génerico</button><br>
+
+
+<label>Sexo:</label><br>
+<label><input type="radio" value="masc" name="sexo">Feminino</label><br>
+
+<label><input type="radio" value="fem" name="sexo">Masculino</label><br>
+
+<label><input type="radio" value="outros" name="sexo">Outros</label><br>
+
+
+<label>Tamanho:</label><br>
+<label><input type="radio" value="p" name="tamanhoroupa">p</label><br>
+
+<label><input type="radio" value="m" name="tamanhoroupa">m</label><br>
+
+<label><input type="radio" value="g" name="tamanhoroupa">g</label><br>
+
+<label>Idiomas:</label><br>
+<label><input type="checkbox" value="pt-br"/>Português</label><br>
+<label><input type="checkbox" value="eng"/>ingles</label><br>
+<label><input type="checkbox" value="esp"/>espanhol</label><br>
+<label><input type="checkbox" value="jap"/>japonês</label><br>
+
+
+<input type="color"/><br>
+
+<label> Doces favoritos:
+<input type="text" name="doces" list="sugestaoDoces"></label><br>
+
+<datalist id= "sugestaoDoces">
+ <option value="nutella"></option>
+ <option value="brigadeiro de café"></option>
+ <option value="kit ket"></option>
+ <option value="beijinho"></option>
+ <option value="balinha"></option>
+ <option value="kinder bueno"></option>
+ <option value="kinder ovo"></option>
+</datalist> 
+<br>
+</fieldset>
+</form>
+</body>
+</html>

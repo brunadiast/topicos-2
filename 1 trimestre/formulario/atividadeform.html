@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<form action="minhapaginaPHP.php" method="get">
+<fieldset><legend>Dados pessoais</legend>
+	<label for="cusuário">Nome:</label><input type="text" placeholder="digite seu nome"/><br/>
+	<label>E-mail: <input type="email" placeholder="digite seu email"/></label><br>
+	<label for="cusuário">CPF:</label><input type="text" placeholder="digite seu cpf"/><br/>
+
+<label>
+	Data de nascimento:
+	<input type="date" dataNasctime required/>
+</label><br>
+
+
+<label>cidades:<br>
+	<select name="cidades" >
+	<option value="UDIA">uberlândia</option>
+	<option value="MHS">morrinhos</option>
+	<option value="GYN">goiânia</option>
+	<option value="CFS">confresa</option>
+	<option value="BG">barra do garças</option>
+</select></label><br>
+
+<label> Estados:<br>
+<select name="estados">
+	<option value="GO">Goiânia</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="SP">São Paulo</option>
+</select><br>
+</label>
+
+<label> País:<br>
+<select name="paises">
+	<option value="BR">Brasil</option>
+	<option value="EUA">Estados unidos</option>
+	<option value="UK">Reino Unido</option>
+</select><br>
+</label>
+
+<label>Sexo:</label><br>
+<label><input type="radio" value="masc" name="sexo">Feminino</label><br>
+
+<label><input type="radio" value="fem" name="sexo">Masculino</label><br>
+
+<label><input type="radio" value="outros" name="sexo">Outros</label><br>
+
+<label>Idiomas:</label><br>
+<label><input type="checkbox" value="pt-br"/>Português</label><br>
+<label><input type="checkbox" value="eng"/>ingles</label><br>
+<label><input type="checkbox" value="esp"/>espanhol</label><br>
+<label><input type="checkbox" value="jap"/>japonês</label><br>
+
+<label>Idade:<br> 
+ <input type="number" min="18" max="120" placeholder="digite id" required/>
+</label>
+</fieldset>
+
+<fieldset><legend>Dados pessoais</legend>
+
+<label for="cusuário">usuário:</label><input type="text" name="name" id="cusuário" placeholder="digite seu nome" required /><br/>
+<label>senha:<input type="password" name="senha" placeholder="digite sua senha" required/></label><br/>
+</fieldset>
+
+<fieldset><legend>Endereço</legend>
+
+<label>Rua:<br/>
+<input type="text" placeholder="digite sua rua" required/>	
+</label><br>
+
+<label>Número:<br>
+<input type="number" placeholder="digite o número da sua residência" required/>
+</label><br>
+
+<label>complemento:<br>
+<input type="text" placeholder="digite um complemento de end." required/>
+</label><br>
+
+<label>Bairro<br>
+<input type="text" placeholder="digite seu bairro" required/>
+</label><br>
+
+<label>cidades:<br>
+	<select name="cidades">
+	<option value="UDIA">uberlândia</option>
+	<option value="MHS">morrinhos</option>
+	<option value="GYN">goiânia</option>
+	<option value="CFS">confresa</option>
+	<option value="BG">barra do garças</option>
+</select></label><br>
+
+<label> Estados:<br>
+<select name="estados">
+	<option value="GO">Goiânia</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="SP">São Paulo</option>
+</select><br>
+</label>
+
+<label> País:<br>
+<select name="paises">
+	<option value="BR">Brasil</option>
+	<option value="EUA">Estados unidos</option>
+	<option value="UK">Reino Unido</option>
+</select><br>
+</label>
+</fieldset>
+
+<fieldset><legend>Dados pessoais</legend>
+	<label>Nome do Pai:<br>
+	<input type="text" placeholder="digite o nome do seu papis" required/>
+	</label><br>
+
+	<label> Nome da Mãe:<br>
+	<input type="text" placeholder="digite o nome da sua mãe" required/>
+		
+
+	</label>
+</fieldset>
+
+<fieldset><legend>Gostos</legend>
+	
+
+<label>Cor favorita:<br>
+<input type="color"/><br>
+</label><br>
+	<label> Doces favoritos:
+<input type="text" name="doces" list="sugestaoDoces"></label><br>
+
+<datalist id= "sugestaoDoces">
+ <option value="nutella"></option>
+ <option value="brigadeiro de café"></option>
+ <option value="kit ket"></option>
+ <option value="beijinho"></option>
+ <option value="balinha"></option>
+ <option value="kinder bueno"></option>
+ <option value="kinder ovo"></option>
+</datalist> 
+<br>
+
+<label> comprovante de pagamento:<br>
+	<input type="file" requerid/>
+</label><br>
+
+
+<label>mensagem: <textarea name="mensagem" cols="40" rows="10" maxlength="240" placeholder="fale sobre você!!" required></textarea></label><br>
+
+<input type="submit" value="Enviar formulário" />
+
+	<input type="reset" value="limpar o formulário"/><br>
+
+
+</fieldset>
+
+
+
+
+</form>
+</body>
+</html>

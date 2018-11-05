@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <script src="trabvalidacao.js"></script>
+
+    <meta charset="utf-8">
+    <style>
+        .erro {
+            border-color: red;
+        }
+        
+        .sucesso {
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="formulario1">
+        <label>Nome:
+            <input type="text" name="nome" />
+        </label>
+        <br>
+        <br>
+        <label>idade:
+            <input type="text" name="idade" />
+        </label>
+        <br>
+        <br>
+        <label>Email:
+            <input type="text" name="email" />
+        </label>
+        <br>
+        <br>
+        <label>telefone:
+            <input type="text" name="telefone" />
+        </label>
+        <div>
+            <br>sexo:
+            <br>
+            <br>
+            <label>
+                <input type="radio" name="sexo" value="f">Feminino</label>
+            <br>
+            <label>
+                <input type="radio" name="sexo" value="m">masculino</label>
+            <br>
+        </div>
+
+        <div>
+            <br>Línguas faladas:
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="lingua" value="pt-br">Português</label>
+            <br>
+            <label>
+                <input type="checkbox" name="lingua" value="ing">Inglês</label>
+            <br>
+            <label>
+                <input type="checkbox" name="lingua" value="fr">Francês</label>
+            <br>
+            <label>
+                <input type="checkbox" name="lingua" value="md">mandarin</label>
+            <br>
+        </div>
+        <br>
+        <div>Estado:
+            <br>
+            <br>
+            <select name="estados">
+                <option value='selecionee'>selecione um estado</option>
+                
+                <option value='go'>Goiás</option>
+            
+                <option value="to">Tocantins</option>
+
+                <option value="sp">São Paulo</option>
+        
+        </select>
+        </div>
+        <br>
+        <div>Cidade:
+            <br>
+            <br>
+            <select name="cidade">
+                <option value='selecione'>selecione um estado</option>
+
+                <option value='goias'>Goiás velho</option>
+        
+                <option value="pm">Palmas</option>
+        
+                <option value="cfs">Confresa</option>
+            <br>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="clique" />
+    </form>
+</body>
+
+</html>

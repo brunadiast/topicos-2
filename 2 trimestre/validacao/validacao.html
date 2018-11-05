@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="validacao.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="validacao.css">
+</head>
+
+<body>
+    <form name="formulario">
+        <label> Nome:
+            <input type="text" name="nome"/>
+        </label>
+        <br>
+        <label> Idade:
+            <input type="number" name="idade" />
+        </label><br>
+        <label> Senha:
+            <input type="password" name="senha" />
+        </label>
+        <br>
+        <label>
+            Estados:
+            <select name="estados">
+                <option>selecione um estado</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="GO">Goias</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+        </label>
+        <br>
+        <div>
+            idiomas:<br>
+            <label>
+                <input type="checkbox" name="idiomas" value="pt-br"/> Português
+            </label><br>
+            <label>
+                <input type="checkbox" name="idiomas" value="eng"/> English
+            </label><br>
+            <label>
+                <input type="checkbox" name="idiomas" value="esp"/> Español
+            </label><br>
+            <label>
+                <input type="checkbox" name="idiomas" value="val"/> valirian
+            </label><br>
+            <label>
+                <input type="checkbox" name="idiomas" value="fran"/> Frnacês
+            </label><br>
+        </div>
+        <div><br> sexo:
+            <br>
+            <label><input type="radio" name="sexo" value="m">masculino</label><br>
+            <label><input type="radio" name="sexo" value="f">feminino</label><br>
+            <label><input type="radio" name="sexo" value="o">outros</label><br>
+        </div>
+        <input type="submit" value="Não clique" />
+
+    </form>
+</body>
+
+</html>
